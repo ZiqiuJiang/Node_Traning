@@ -7,3 +7,12 @@ export function Login(username,password) {
     params: { username,password }
   })
 }
+
+export function getAllActicle() {
+  return Service({
+    url: '/article/get',
+    method: 'get',
+    params: {}
+  })
+}
+

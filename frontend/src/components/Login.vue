@@ -7,7 +7,7 @@
             <el-input v-model="user"></el-input>
           </el-form-item>
           <el-form-item label="Password">
-            <el-input v-model="password"></el-input>
+            <el-input v-model="password" type="password"></el-input>
           </el-form-item>
           <el-button @click="login" type="primary">Login</el-button>
         </el-form>
