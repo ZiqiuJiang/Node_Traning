@@ -33,14 +33,14 @@ export default {
         if (result.data.res.length != 0) {
           Message({
             type: "success",
-            message: "登陆成功",
+            message: "Login success",
             duration: 2000,
           });
           this.$router.push("/showArticle");
         } else {
           Message({
             type: "error",
-            message: "登陆失败",
+            message: "Login fail",
             duration: 2000,
           });
         }

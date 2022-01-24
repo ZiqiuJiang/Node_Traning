@@ -23,10 +23,8 @@ router.post("/post", async (req, res) => {
             title: title,
             content: content
         })
-        console.log(saveData);
         let result = await saveData.save();
         if (result) {
-            console.log(result)
             res.send("article post success")
         } else {
             res.send("article post fail")
